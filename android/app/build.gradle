@@ -93,9 +93,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.testproject"
+    namespace "com.faustofedele.geraldchallenge"
     defaultConfig {
-        applicationId "com.testproject"
+        applicationId "com.faustofedele.geraldchallenge"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

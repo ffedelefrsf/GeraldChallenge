@@ -1,4 +1,4 @@
-package com.testproject;
+package com.faustofedele.geraldchallenge;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
