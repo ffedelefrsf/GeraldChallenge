@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Dimensions,
   Platform,
   SafeAreaView,
   StyleSheet,
@@ -49,10 +50,10 @@ export type BottomTabParamList = {
 };
 const Tab = createBottomTabNavigator<BottomTabParamList>();
 
+const { width } = Dimensions.get('screen');
 const BottomTabNavigator: React.FC<Props> = ({ navigation }) => {
   const drawerProgress = useDrawerProgress();
   const drawerStatus = useDrawerStatus();
-  console.log('here ??? ', drawerStatus);
 
   const homePageStyle = useAnimatedStyle(() => {
     const interpolateDegrees = interpolate(
@@ -63,7 +64,7 @@ const BottomTabNavigator: React.FC<Props> = ({ navigation }) => {
     const interpolateTranslateX = interpolate(
       drawerProgress.value,
       [0, 1],
-      [0, 50],
+      [0, Platform.OS === 'android' ? width * 0.55 : 50],
     );
     const interpolateTranslateY = interpolate(
       drawerProgress.value,
@@ -120,7 +121,11 @@ const BottomTabNavigator: React.FC<Props> = ({ navigation }) => {
   };
 
   return (
-    <View style={[commonViewStyles.flex, styles.background]}>
+    <View
+      style={[
+        commonViewStyles.flex,
+        drawerStatus !== 'closed' && styles.background,
+      ]}>
       <Animated.View style={[styles.container, homePageStyle]}>
         <SafeAreaView style={commonViewStyles.container}>
           {/* DRAWER HEADER SIMULATOR */}
