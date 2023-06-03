@@ -127,9 +127,9 @@ const BottomTabNavigator: React.FC<Props> = ({ navigation }) => {
         drawerStatus !== 'closed' && styles.background,
       ]}>
       <Animated.View style={[styles.container, homePageStyle]}>
-        <SafeAreaView style={commonViewStyles.container}>
+        <SafeAreaView style={commonViewStyles.flex}>
           {/* DRAWER HEADER SIMULATOR */}
-          <View style={styles.headerContainer}>
+          <SafeAreaView style={styles.headerContainer}>
             <TouchableOpacity
               onPress={handleOpenDrawer}
               style={styles.menuDrawer}>
@@ -142,7 +142,7 @@ const BottomTabNavigator: React.FC<Props> = ({ navigation }) => {
             <Text style={styles.headerTitle}>
               {ROUTES.DRAWER_START.toUpperCase()}
             </Text>
-          </View>
+          </SafeAreaView>
           {/* END DRAWER HEADER SIMULATOR */}
           <Tab.Navigator
             initialRouteName={ROUTES.HOME_BOTTOM_TAB}
@@ -213,7 +213,7 @@ const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: 20,
   },
   headerTitle: {
     color: colors.LIGHT_GREY,
