@@ -51,7 +51,7 @@ Wish me luck, folks. 👋👋
 
 ### Description
  - Build a drawer menu similar to the one shown in the animation below:
-![Drawer Animation](https://geraldtech.notion.site/image/https://user-images.githubusercontent.com/40486471/100883752-209b0300-34ca-11eb-9aa7-836d1be2d915.gif?id=afc55f43-3b72-456a-a9c6-56b917c8fc65&table=block&spaceId=7210ed3e-4721-40b0-b799-c6d10ac8e1d7&userId=&cache=v2)
+[GIF](https://geraldtech.notion.site/image/https://user-images.githubusercontent.com/40486471/100883752-209b0300-34ca-11eb-9aa7-836d1be2d915.gif?id=afc55f43-3b72-456a-a9c6-56b917c8fc65&table=block&spaceId=7210ed3e-4721-40b0-b799-c6d10ac8e1d7&userId=&cache=v2)
  - Navigation Requested Structure:
 	 - DrawerMenu(one in a gif)
 		 - tab navigator (bottom tab navigation)
@@ -89,7 +89,8 @@ Nevertheless, after a whole regular work day, plus building this template (as I 
 So, yeah. It took me a while, but eventually I did it, and this is not the end of the story!!!! There is more, because once I wast ABOUT to let my mind rest Drawer was just getting a really strange behavior, and this guys was the biggest problem of the night. I spent hours searching for the solution... Didn't find it. But after doing a lot of research, the most accepted answers were from people who experienced trouble with React Native Reanimated in relation with React Drawer Navigator... So, guess what? React Native, Node Package Manager, the mighty modules association and dependency... See where I'm going? Yeap, dependency issues, no error, no warns, no info, no nothing, just a blank screen when you pressed the hamburguer menu of Drawer or tried to open/close/toggle the drawer programatically.
 Anyways, this was my Friday night. Fun, huh. Will leave a GIF below for you to appreaciate the results.
 Let me know if you need something or just create a pull request/issue if you find something important that's missing.
-![Demo](https://drive.google.com/file/d/1aqPTGBRMUrn833DS-hhYW1_PwqnB7cF1/view?usp=sharing)
+
+[Demo GIF](https://drive.google.com/file/d/1aqPTGBRMUrn833DS-hhYW1_PwqnB7cF1/view?usp=sharing)
 
 Have a great weekend, people. 
 Wish you the best!!! ✨✨
