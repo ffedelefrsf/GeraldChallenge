@@ -1,6 +1,12 @@
 import React from 'react';
-import { Platform, SafeAreaView, StyleSheet, View } from 'react-native';
-import { IconButton, Text } from 'react-native-paper';
+import {
+  Platform,
+  SafeAreaView,
+  StyleSheet,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import { Text } from 'react-native-paper';
 import {
   BottomTabNavigationOptions,
   createBottomTabNavigator,
@@ -8,6 +14,7 @@ import {
 import {
   DrawerNavigationProp,
   useDrawerProgress,
+  useDrawerStatus,
 } from '@react-navigation/drawer';
 import Animated, {
   interpolate,
@@ -44,11 +51,37 @@ const Tab = createBottomTabNavigator<BottomTabParamList>();
 
 const BottomTabNavigator: React.FC<Props> = ({ navigation }) => {
   const drawerProgress = useDrawerProgress();
+  const drawerStatus = useDrawerStatus();
+  console.log('here ??? ', drawerStatus);
 
   const homePageStyle = useAnimatedStyle(() => {
-    const interpolation = interpolate(drawerProgress.value, [0, 1], [0, -5]);
+    const interpolateDegrees = interpolate(
+      drawerProgress.value,
+      [0, 1],
+      [0, -3],
+    );
+    const interpolateTranslateX = interpolate(
+      drawerProgress.value,
+      [0, 1],
+      [0, 50],
+    );
+    const interpolateTranslateY = interpolate(
+      drawerProgress.value,
+      [0, 1],
+      [0, 50],
+    );
+    const interpolateBorder = interpolate(
+      drawerProgress.value,
+      [0, 1],
+      [0, 30],
+    );
     return {
-      transform: [{ rotate: interpolation + 'deg' }],
+      transform: [
+        { rotate: interpolateDegrees + 'deg' },
+        { translateX: interpolateTranslateX },
+        { translateY: interpolateTranslateY },
+      ],
+      borderTopLeftRadius: interpolateBorder,
     };
   });
 
@@ -86,95 +119,106 @@ const BottomTabNavigator: React.FC<Props> = ({ navigation }) => {
     navigation.toggleDrawer();
   };
 
-  const simulatedDrawerIcon = () => (
-    <SimpleLineIcons
-      name="menu"
-      color={colors.LIGHTER_GREY}
-      size={20}
-      onPress={handleOpenDrawer}
-    />
-  );
-
   return (
-    <Animated.View style={[styles.container, homePageStyle]}>
-      <SafeAreaView style={commonViewStyles.container}>
-        {/* DRAWER HEADER SIMULATOR */}
-        <View style={styles.headerContainer}>
-          <IconButton icon={simulatedDrawerIcon} />
-          <Text style={styles.headerTitle}>
-            {ROUTES.DRAWER_START.toUpperCase()}
-          </Text>
-        </View>
-        {/* END DRAWER HEADER SIMULATOR */}
-        <Tab.Navigator
-          initialRouteName={ROUTES.HOME_BOTTOM_TAB}
-          backBehavior="none"
-          screenOptions={{
-            tabBarItemStyle: {
-              height: BOTTOM_TAB_HEIGHT,
-              paddingTop: 15,
-            },
-            tabBarStyle: [
-              styles.tabBarStyle,
-              { height: BOTTOM_TAB_HEIGHT },
-              Platform.select({
-                ios: {
-                  ...commonViewStyles.shadow(6),
-                  shadowOffset: { width: 0, height: -30 },
-                },
-                android: {
-                  elevation: 25,
-                  paddingBottom: 70,
-                },
-              }),
-            ],
-            unmountOnBlur: true,
-            headerShown: false,
-            tabBarActiveTintColor: colors.LIGHT_RED,
-            tabBarBackground: () =>
-              handleBackground(BOTTOM_TAB_HEIGHT + 10, 0.075),
-          }}>
-          {Tabs.map((item: TabDetail, idx: number) => {
-            return (
-              <Tab.Screen
-                key={idx}
-                name={item.name}
-                component={item.component}
-                options={() => ({
-                  ...item.options(),
-                })}
-                listeners={({ route }: { route: any }) => ({
-                  tabPress: _e => {
-                    route.params &&
-                      Object.keys(route.params).forEach(param => {
-                        route.params && delete route.params[param];
-                      });
-                  },
-                })}
+    <View style={[commonViewStyles.flex, styles.background]}>
+      <Animated.View style={[styles.container, homePageStyle]}>
+        <SafeAreaView style={commonViewStyles.container}>
+          {/* DRAWER HEADER SIMULATOR */}
+          <View style={styles.headerContainer}>
+            <TouchableOpacity
+              onPress={handleOpenDrawer}
+              style={styles.menuDrawer}>
+              <SimpleLineIcons
+                name="menu"
+                color={colors.LIGHTER_GREY}
+                size={20}
               />
-            );
-          })}
-        </Tab.Navigator>
-      </SafeAreaView>
-    </Animated.View>
+            </TouchableOpacity>
+            <Text style={styles.headerTitle}>
+              {ROUTES.DRAWER_START.toUpperCase()}
+            </Text>
+          </View>
+          {/* END DRAWER HEADER SIMULATOR */}
+          <Tab.Navigator
+            initialRouteName={ROUTES.HOME_BOTTOM_TAB}
+            backBehavior="none"
+            screenOptions={{
+              tabBarItemStyle: {
+                height: BOTTOM_TAB_HEIGHT,
+                paddingTop: 15,
+              },
+              tabBarStyle: [
+                styles.tabBarStyle,
+                { height: BOTTOM_TAB_HEIGHT },
+                Platform.select({
+                  ios: {
+                    ...commonViewStyles.shadow(6),
+                    shadowOffset: { width: 0, height: -30 },
+                  },
+                  android: {
+                    elevation: 25,
+                    paddingBottom: 70,
+                  },
+                }),
+              ],
+              unmountOnBlur: true,
+              headerShown: false,
+              tabBarActiveTintColor: colors.LIGHT_RED,
+              tabBarBackground: () =>
+                handleBackground(BOTTOM_TAB_HEIGHT + 10, 0.075),
+            }}>
+            {Tabs.map((item: TabDetail, idx: number) => {
+              return (
+                <Tab.Screen
+                  key={idx}
+                  name={item.name}
+                  component={item.component}
+                  options={() => ({
+                    ...item.options(),
+                  })}
+                  listeners={({ route }: { route: any }) => ({
+                    tabPress: _e => {
+                      route.params &&
+                        Object.keys(route.params).forEach(param => {
+                          route.params && delete route.params[param];
+                        });
+                    },
+                  })}
+                />
+              );
+            })}
+          </Tab.Navigator>
+        </SafeAreaView>
+      </Animated.View>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    borderTopLeftRadius: 100,
+    backgroundColor: colors.WHITE,
   },
+  background: { backgroundColor: colors.PURPLE },
   tabBarStyle: {
     paddingHorizontal: 40,
     backgroundColor: colors.WHITE,
     borderTopWidth: 0,
   },
-  headerContainer: { flexDirection: 'row', alignItems: 'center' },
+  headerContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 10,
+  },
   headerTitle: {
     color: colors.LIGHT_GREY,
     fontSize: 20,
-    letterSpacing: 3,
+    letterSpacing: 4,
+    marginLeft: 10,
+  },
+  menuDrawer: {
+    marginLeft: 20,
+    marginRight: 10,
   },
 });
 

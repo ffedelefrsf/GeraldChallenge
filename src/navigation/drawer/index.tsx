@@ -15,7 +15,7 @@ export type DrawerParamList = {
   [ROUTES.DRAWER_ORDERS]: {};
 };
 
-const Drawer = createDrawerNavigator<DrawerParamList>();
+const Drawer = createDrawerNavigator();
 const DrawerNavigator: React.FC<{}> = ({}) => {
   return (
     <Drawer.Navigator
@@ -26,6 +26,9 @@ const DrawerNavigator: React.FC<{}> = ({}) => {
         drawerActiveTintColor: colors.LIGHT_RED,
         drawerInactiveTintColor: colors.WHITE,
         drawerLabelStyle: styles.label,
+        drawerStyle: { width: '50%' },
+        sceneContainerStyle: { flex: 1, backgroundColor: '#ccc' },
+        overlayColor: 'transparent',
         headerShown: false,
       }}>
       <Drawer.Screen

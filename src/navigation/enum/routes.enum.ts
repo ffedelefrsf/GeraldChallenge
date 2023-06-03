@@ -1,5 +1,4 @@
 export enum ROUTES {
-  MAIN_STACK = 'MAIN_STACK',
   MAIN_HOME_DRAWER = 'Main',
   DRAWER_START = 'Start',
   DRAWER_CART = 'Your Cart',

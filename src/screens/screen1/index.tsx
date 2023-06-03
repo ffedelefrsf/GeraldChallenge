@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Text } from 'react-native-paper';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 import { ROUTES } from 'navigation/enum/routes.enum';
 import PrimaryButton from 'components/PrimaryButton';
 import { colors } from 'utils/colors';
 import { HomeStackParamList } from 'navigation/stack/HomeStackNavigator';
+import TitleText from 'components/TitleText';
 
 interface Props {
   navigation: NativeStackNavigationProp<
@@ -22,7 +22,7 @@ const Screen1: React.FC<Props> = ({ navigation }) => {
 
   return (
     <View>
-      <Text style={styles.text}>Screen 1!</Text>
+      <TitleText customStyle={styles.text}>Screen 1!</TitleText>
       <PrimaryButton
         onPress={handleNavigatePress}
         label={'Navigate to Screen 2 >'}
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     marginVertical: 20,
   },
-  text: { color: colors.BLACK },
+  text: { color: colors.BLACK, marginVertical: 20 },
 });
 
 export default Screen1;

@@ -39,7 +39,7 @@ const CustomDrawer: React.FC<any> = props => {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.PURPLE },
-  safeAreaContainer: { marginLeft: 10, width: '60%', flex: 1 },
+  safeAreaContainer: { marginLeft: 10, flex: 1 },
   titleContainer: { marginTop: 50 },
   title: {
     color: colors.WHITE,
