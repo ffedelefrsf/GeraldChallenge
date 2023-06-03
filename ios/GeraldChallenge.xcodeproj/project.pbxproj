@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* GeraldChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* GeraldChallengeTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-GeraldChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-GeraldChallenge.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-GeraldChallenge-GeraldChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-GeraldChallenge-GeraldChallengeTests.a */; };
+		5C02BA2D88F53CFE64E1509B /* libPods-GeraldChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA74837B50AD64576E22D40 /* libPods-GeraldChallenge.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AAD53352EFC45B6DD7C9874F /* libPods-GeraldChallenge-GeraldChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 065B10BBE6A936760BFDA0C2 /* libPods-GeraldChallenge-GeraldChallengeTests.a */; };
+		BD37F83B2A2AE33900436C73 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F81B2A2A972D00436C73 /* Fontisto.ttf */; };
+		BD37F83C2A2AE33900436C73 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F81C2A2A972D00436C73 /* Octicons.ttf */; };
+		BD37F83D2A2AE33900436C73 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F81D2A2A972D00436C73 /* Feather.ttf */; };
+		BD37F83E2A2AE33900436C73 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F81E2A2A972D00436C73 /* Entypo.ttf */; };
+		BD37F83F2A2AE33900436C73 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F81F2A2A972D00436C73 /* FontAwesome5_Brands.ttf */; };
+		BD37F8402A2AE33900436C73 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F8202A2A972D00436C73 /* MaterialCommunityIcons.ttf */; };
+		BD37F8412A2AE33900436C73 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F8212A2A972D00436C73 /* AntDesign.ttf */; };
+		BD37F8422A2AE33900436C73 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F8222A2A972D00436C73 /* Foundation.ttf */; };
+		BD37F8432A2AE33900436C73 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F8232A2A972D00436C73 /* Ionicons.ttf */; };
+		BD37F8442A2AE33900436C73 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F8242A2A972D00436C73 /* FontAwesome5_Solid.ttf */; };
+		BD37F8452A2AE33900436C73 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F8252A2A972D00436C73 /* FontAwesome5_Regular.ttf */; };
+		BD37F8462A2AE33900436C73 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F8262A2A972D00436C73 /* FontAwesome.ttf */; };
+		BD37F8472A2AE33900436C73 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F8272A2A972D00436C73 /* Zocial.ttf */; };
+		BD37F8482A2AE33900436C73 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F8282A2A972D00436C73 /* EvilIcons.ttf */; };
+		BD37F8492A2AE33900436C73 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F8292A2A972D00436C73 /* SimpleLineIcons.ttf */; };
+		BD37F84A2A2AE33900436C73 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37F82A2A2A972D00436C73 /* MaterialIcons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,27 +38,43 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = "GeraldChallenge";
+			remoteInfo = GeraldChallenge;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* GeraldChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GeraldChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* GeraldChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeraldChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* GeraldChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GeraldChallengeTests.m"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* GeraldChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GeraldChallenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "GeraldChallenge/AppDelegate.h"; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = "GeraldChallenge/AppDelegate.mm"; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "GeraldChallenge/Images.xcassets"; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "GeraldChallenge/Info.plist"; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "GeraldChallenge/main.m"; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-GeraldChallenge-GeraldChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeraldChallenge-GeraldChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-GeraldChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeraldChallenge.debug.xcconfig"; path = "Target Support Files/Pods-GeraldChallenge/Pods-GeraldChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-GeraldChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeraldChallenge.release.xcconfig"; path = "Target Support Files/Pods-GeraldChallenge/Pods-GeraldChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-GeraldChallenge-GeraldChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeraldChallenge-GeraldChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-GeraldChallenge-GeraldChallengeTests/Pods-GeraldChallenge-GeraldChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-GeraldChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeraldChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "GeraldChallenge/LaunchScreen.storyboard"; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-GeraldChallenge-GeraldChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeraldChallenge-GeraldChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-GeraldChallenge-GeraldChallengeTests/Pods-GeraldChallenge-GeraldChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* GeraldChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeraldChallengeTests.m; sourceTree = "<group>"; };
+		065B10BBE6A936760BFDA0C2 /* libPods-GeraldChallenge-GeraldChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeraldChallenge-GeraldChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		080DC28E788634CCB5E60E3C /* Pods-GeraldChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeraldChallenge.debug.xcconfig"; path = "Target Support Files/Pods-GeraldChallenge/Pods-GeraldChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* GeraldChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeraldChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GeraldChallenge/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = GeraldChallenge/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GeraldChallenge/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GeraldChallenge/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = GeraldChallenge/main.m; sourceTree = "<group>"; };
+		4B663FD6D31473FBCAB47D21 /* Pods-GeraldChallenge-GeraldChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeraldChallenge-GeraldChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-GeraldChallenge-GeraldChallengeTests/Pods-GeraldChallenge-GeraldChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		63443C0C38217171657DC871 /* Pods-GeraldChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeraldChallenge.release.xcconfig"; path = "Target Support Files/Pods-GeraldChallenge/Pods-GeraldChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GeraldChallenge/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2E00BC11BCA30F39760216D /* Pods-GeraldChallenge-GeraldChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeraldChallenge-GeraldChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-GeraldChallenge-GeraldChallengeTests/Pods-GeraldChallenge-GeraldChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEA74837B50AD64576E22D40 /* libPods-GeraldChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeraldChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD37F81B2A2A972D00436C73 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		BD37F81C2A2A972D00436C73 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		BD37F81D2A2A972D00436C73 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		BD37F81E2A2A972D00436C73 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		BD37F81F2A2A972D00436C73 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		BD37F8202A2A972D00436C73 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		BD37F8212A2A972D00436C73 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		BD37F8222A2A972D00436C73 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		BD37F8232A2A972D00436C73 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		BD37F8242A2A972D00436C73 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		BD37F8252A2A972D00436C73 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		BD37F8262A2A972D00436C73 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		BD37F8272A2A972D00436C73 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		BD37F8282A2A972D00436C73 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		BD37F8292A2A972D00436C73 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		BD37F82A2A2A972D00436C73 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-GeraldChallenge-GeraldChallengeTests.a in Frameworks */,
+				AAD53352EFC45B6DD7C9874F /* libPods-GeraldChallenge-GeraldChallengeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-GeraldChallenge.a in Frameworks */,
+				5C02BA2D88F53CFE64E1509B /* libPods-GeraldChallenge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +104,7 @@
 				00E356F21AD99517003FC87E /* GeraldChallengeTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = "GeraldChallengeTests";
+			path = GeraldChallengeTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -93,15 +125,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = "GeraldChallenge";
+			name = GeraldChallenge;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-GeraldChallenge.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-GeraldChallenge-GeraldChallengeTests.a */,
+				AEA74837B50AD64576E22D40 /* libPods-GeraldChallenge.a */,
+				065B10BBE6A936760BFDA0C2 /* libPods-GeraldChallenge-GeraldChallengeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,6 +148,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				BD37F81A2A2A972D00436C73 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* GeraldChallenge */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* GeraldChallengeTests */,
@@ -140,12 +173,35 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-GeraldChallenge.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-GeraldChallenge.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-GeraldChallenge-GeraldChallengeTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-GeraldChallenge-GeraldChallengeTests.release.xcconfig */,
+				080DC28E788634CCB5E60E3C /* Pods-GeraldChallenge.debug.xcconfig */,
+				63443C0C38217171657DC871 /* Pods-GeraldChallenge.release.xcconfig */,
+				A2E00BC11BCA30F39760216D /* Pods-GeraldChallenge-GeraldChallengeTests.debug.xcconfig */,
+				4B663FD6D31473FBCAB47D21 /* Pods-GeraldChallenge-GeraldChallengeTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD37F81A2A2A972D00436C73 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BD37F81B2A2A972D00436C73 /* Fontisto.ttf */,
+				BD37F81C2A2A972D00436C73 /* Octicons.ttf */,
+				BD37F81D2A2A972D00436C73 /* Feather.ttf */,
+				BD37F81E2A2A972D00436C73 /* Entypo.ttf */,
+				BD37F81F2A2A972D00436C73 /* FontAwesome5_Brands.ttf */,
+				BD37F8202A2A972D00436C73 /* MaterialCommunityIcons.ttf */,
+				BD37F8212A2A972D00436C73 /* AntDesign.ttf */,
+				BD37F8222A2A972D00436C73 /* Foundation.ttf */,
+				BD37F8232A2A972D00436C73 /* Ionicons.ttf */,
+				BD37F8242A2A972D00436C73 /* FontAwesome5_Solid.ttf */,
+				BD37F8252A2A972D00436C73 /* FontAwesome5_Regular.ttf */,
+				BD37F8262A2A972D00436C73 /* FontAwesome.ttf */,
+				BD37F8272A2A972D00436C73 /* Zocial.ttf */,
+				BD37F8282A2A972D00436C73 /* EvilIcons.ttf */,
+				BD37F8292A2A972D00436C73 /* SimpleLineIcons.ttf */,
+				BD37F82A2A2A972D00436C73 /* MaterialIcons.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,20 +211,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GeraldChallengeTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				CA17D60BFFF82C9F5AF2A6C8 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				9E9F24C6EDDDB389A4DA9AEB /* [CP] Embed Pods Frameworks */,
+				B7FCF0E247B63D136A8DA7D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = "GeraldChallengeTests";
-			productname = "GeraldChallengeTests";
+			name = GeraldChallengeTests;
+			productName = GeraldChallengeTests;
 			productReference = 00E356EE1AD99517003FC87E /* GeraldChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -176,21 +232,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GeraldChallenge" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				8B01E0C5108DE68CE0BC28CD /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				1A4DF5DEBB100BD01642EBFA /* [CP] Embed Pods Frameworks */,
+				D823E076F97DFB4292A6DBFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "GeraldChallenge";
-			productName = "GeraldChallenge";
+			name = GeraldChallenge;
+			productName = GeraldChallenge;
 			productReference = 13B07F961A680F5B00A75B9A /* GeraldChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -242,6 +298,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD37F83B2A2AE33900436C73 /* Fontisto.ttf in Resources */,
+				BD37F83C2A2AE33900436C73 /* Octicons.ttf in Resources */,
+				BD37F83D2A2AE33900436C73 /* Feather.ttf in Resources */,
+				BD37F83E2A2AE33900436C73 /* Entypo.ttf in Resources */,
+				BD37F83F2A2AE33900436C73 /* FontAwesome5_Brands.ttf in Resources */,
+				BD37F8402A2AE33900436C73 /* MaterialCommunityIcons.ttf in Resources */,
+				BD37F8412A2AE33900436C73 /* AntDesign.ttf in Resources */,
+				BD37F8422A2AE33900436C73 /* Foundation.ttf in Resources */,
+				BD37F8432A2AE33900436C73 /* Ionicons.ttf in Resources */,
+				BD37F8442A2AE33900436C73 /* FontAwesome5_Solid.ttf in Resources */,
+				BD37F8452A2AE33900436C73 /* FontAwesome5_Regular.ttf in Resources */,
+				BD37F8462A2AE33900436C73 /* FontAwesome.ttf in Resources */,
+				BD37F8472A2AE33900436C73 /* Zocial.ttf in Resources */,
+				BD37F8482A2AE33900436C73 /* EvilIcons.ttf in Resources */,
+				BD37F8492A2AE33900436C73 /* SimpleLineIcons.ttf in Resources */,
+				BD37F84A2A2AE33900436C73 /* MaterialIcons.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -266,7 +338,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		1A4DF5DEBB100BD01642EBFA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,29 +355,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeraldChallenge/Pods-GeraldChallenge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GeraldChallenge-GeraldChallengeTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		8B01E0C5108DE68CE0BC28CD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,7 +377,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		9E9F24C6EDDDB389A4DA9AEB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,24 +394,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeraldChallenge-GeraldChallengeTests/Pods-GeraldChallenge-GeraldChallengeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GeraldChallenge/Pods-GeraldChallenge-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GeraldChallenge/Pods-GeraldChallenge-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeraldChallenge/Pods-GeraldChallenge-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+		B7FCF0E247B63D136A8DA7D5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -376,6 +409,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeraldChallenge-GeraldChallengeTests/Pods-GeraldChallenge-GeraldChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA17D60BFFF82C9F5AF2A6C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeraldChallenge-GeraldChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D823E076F97DFB4292A6DBFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeraldChallenge/Pods-GeraldChallenge-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeraldChallenge/Pods-GeraldChallenge-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeraldChallenge/Pods-GeraldChallenge-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -430,14 +502,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-GeraldChallenge-GeraldChallengeTests.debug.xcconfig */;
+			baseConfigurationReference = A2E00BC11BCA30F39760216D /* Pods-GeraldChallenge-GeraldChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "GeraldChallengeTests/Info.plist";
+				INFOPLIST_FILE = GeraldChallengeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,7 +521,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.faustofedele.geraldchallenge";
+				PRODUCT_BUNDLE_IDENTIFIER = com.faustofedele.geraldchallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeraldChallenge.app/GeraldChallenge";
 			};
@@ -457,11 +529,11 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-GeraldChallenge-GeraldChallengeTests.release.xcconfig */;
+			baseConfigurationReference = 4B663FD6D31473FBCAB47D21 /* Pods-GeraldChallenge-GeraldChallengeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = "GeraldChallengeTests/Info.plist";
+				INFOPLIST_FILE = GeraldChallengeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,7 +545,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.faustofedele.geraldchallenge";
+				PRODUCT_BUNDLE_IDENTIFIER = com.faustofedele.geraldchallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeraldChallenge.app/GeraldChallenge";
 			};
@@ -481,14 +553,14 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-GeraldChallenge.debug.xcconfig */;
+			baseConfigurationReference = 080DC28E788634CCB5E60E3C /* Pods-GeraldChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "GeraldChallenge/Info.plist";
-             INFOPLIST_KEY_CFBundleDisplayName = "GeraldChallenge";
+				INFOPLIST_FILE = GeraldChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GeraldChallenge;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,8 +571,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.faustofedele.geraldchallenge";
-				PRODUCT_NAME = "GeraldChallenge";
+				PRODUCT_BUNDLE_IDENTIFIER = com.faustofedele.geraldchallenge;
+				PRODUCT_NAME = GeraldChallenge;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -509,13 +581,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-GeraldChallenge.release.xcconfig */;
+			baseConfigurationReference = 63443C0C38217171657DC871 /* Pods-GeraldChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "GeraldChallenge/Info.plist";
-             INFOPLIST_KEY_CFBundleDisplayName = "GeraldChallenge";
+				INFOPLIST_FILE = GeraldChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GeraldChallenge;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,8 +598,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.faustofedele.geraldchallenge";
-				PRODUCT_NAME = "GeraldChallenge";
+				PRODUCT_BUNDLE_IDENTIFIER = com.faustofedele.geraldchallenge;
+				PRODUCT_NAME = GeraldChallenge;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
