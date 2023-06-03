@@ -1,5 +1,14 @@
 export enum ROUTES {
   MAIN_STACK = 'MAIN_STACK',
-  MAIN_HOME_STACK = 'Main',
-  HOME_STACK = 'Home',
+  MAIN_HOME_DRAWER = 'Main',
+  DRAWER_START = 'Start',
+  DRAWER_CART = 'Your Cart',
+  DRAWER_FAVOURITES = 'Favourites',
+  DRAWER_ORDERS = 'Your Orders',
+  DRAWER_BOTTOM = 'DRAWER_BOTTOM',
+  HOME_BOTTOM_TAB = 'Home',
+  CONTACT_BOTTOM_TAB = 'Contact',
+  HOME_STACK_SCREEN1 = 'Screen1',
+  HOME_STACK_SCREEN2 = 'Screen2',
+  CONTACT_STACK_INDEX = 'CONTACT_STACK_INDEX',
 }

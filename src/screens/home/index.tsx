@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SafeAreaView, Text } from 'react-native';
+import { SafeAreaView } from 'react-native';
 
 import { SampleContext, SampleData } from 'contexts/SampleContext';
 import { commonViewStyles } from 'utils/commonStyles';
@@ -19,9 +19,7 @@ const Home: React.FC<Props> = ({}) => {
 
   return (
     <SampleContext.Provider value={sampleContextValue}>
-      <SafeAreaView style={commonViewStyles.container}>
-        <Text>Home!</Text>
-      </SafeAreaView>
+      <SafeAreaView style={commonViewStyles.container} />
     </SampleContext.Provider>
   );
 };

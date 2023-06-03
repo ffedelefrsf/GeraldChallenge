@@ -40,10 +40,10 @@ const PrimaryButton: React.FC<Props> = ({
       {...(!verticalLinear && { start: { x: 0, y: 0 } })}
       colors={
         verticalLinear
-          ? [colors.PRIMARY, colors.LIGHT_BLUE]
+          ? [colors.PRIMARY, colors.LIGHT_RED]
           : disabled
           ? [colors.LIGHT_GREY, colors.LIGHT_GREY]
-          : [colors.LIGHT_BLUE, colors.PRIMARY]
+          : [colors.LIGHT_RED, colors.PRIMARY]
       }
       style={[styles.container, customContainerStyle]}>
       <TouchableOpacity

@@ -7,7 +7,6 @@ import {
 } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import HomeStackNavigator from './stack/HomeStackNavigator';
 import { ROUTES } from './enum/routes.enum';
 import { colors } from 'utils/colors';
 import PlatformKeyboardAvoiding from 'components/PlatformKeyboardAvoiding';
@@ -15,9 +14,10 @@ import { ModalContext, ModalData } from 'contexts/ModalContext';
 import Modal from 'components/Modal';
 import Toast from 'components/Toast';
 import { ToastContext, ToastData } from 'contexts/ToastContext';
+import DrawerNavigator from './drawer';
 
 export type MainStackParamList = {
-  [ROUTES.MAIN_HOME_STACK]: {};
+  [ROUTES.MAIN_HOME_DRAWER]: {};
 };
 const MainStack = createNativeStackNavigator<MainStackParamList>();
 
@@ -63,13 +63,13 @@ const Navigation: React.FC<{}> = ({}) => {
           <Toast />
           <PlatformKeyboardAvoiding>
             <MainStack.Navigator
-              initialRouteName={ROUTES.MAIN_HOME_STACK}
+              initialRouteName={ROUTES.MAIN_HOME_DRAWER}
               screenOptions={{
                 headerShown: false,
               }}>
               <MainStack.Screen
-                name={ROUTES.MAIN_HOME_STACK}
-                component={HomeStackNavigator}
+                name={ROUTES.MAIN_HOME_DRAWER}
+                component={DrawerNavigator}
               />
             </MainStack.Navigator>
           </PlatformKeyboardAvoiding>

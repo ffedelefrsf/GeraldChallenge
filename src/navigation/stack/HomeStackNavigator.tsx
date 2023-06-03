@@ -1,28 +1,25 @@
 import React from 'react';
-import {
-  NativeStackNavigationProp,
-  createNativeStackNavigator,
-} from '@react-navigation/native-stack';
-import { RouteProp } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { ROUTES } from '../enum/routes.enum';
-import { MainStackParamList } from '..';
-import Home from '../../screens/home';
+import Screen1 from 'screens/screen1';
+import Screen2 from 'screens/screen2';
 
-interface Props {
-  route: RouteProp<MainStackParamList, ROUTES.MAIN_HOME_STACK>;
-  navigation: NativeStackNavigationProp<HomeStackParamList>;
-}
+interface Props {}
 
 export type HomeStackParamList = {
-  [ROUTES.HOME_STACK]: {};
+  [ROUTES.HOME_STACK_SCREEN1]: undefined;
+  [ROUTES.HOME_STACK_SCREEN2]: undefined;
 };
 const HomeStack = createNativeStackNavigator<HomeStackParamList>();
 
 const HomeStackNavigator: React.FC<Props> = ({}) => {
   return (
-    <HomeStack.Navigator initialRouteName={ROUTES.HOME_STACK}>
-      <HomeStack.Screen name={ROUTES.HOME_STACK} component={Home} />
+    <HomeStack.Navigator
+      initialRouteName={ROUTES.HOME_STACK_SCREEN1}
+      screenOptions={{ headerShown: false }}>
+      <HomeStack.Screen name={ROUTES.HOME_STACK_SCREEN1} component={Screen1} />
+      <HomeStack.Screen name={ROUTES.HOME_STACK_SCREEN2} component={Screen2} />
     </HomeStack.Navigator>
   );
 };

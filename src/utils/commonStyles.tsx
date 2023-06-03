@@ -12,7 +12,7 @@ export const commonViewStyles = {
   }),
   flex: { flex: 1 },
   container: {
-    ...(this as any).flex,
+    flex: 1,
     margin: 10,
   },
 };
