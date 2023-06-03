@@ -15,7 +15,6 @@ import {
 import {
   DrawerNavigationProp,
   useDrawerProgress,
-  useDrawerStatus,
 } from '@react-navigation/drawer';
 import Animated, {
   interpolate,
@@ -53,7 +52,6 @@ const Tab = createBottomTabNavigator<BottomTabParamList>();
 const { width } = Dimensions.get('screen');
 const BottomTabNavigator: React.FC<Props> = ({ navigation }) => {
   const drawerProgress = useDrawerProgress();
-  const drawerStatus = useDrawerStatus();
 
   const homePageStyle = useAnimatedStyle(() => {
     const interpolateDegrees = interpolate(
@@ -121,11 +119,7 @@ const BottomTabNavigator: React.FC<Props> = ({ navigation }) => {
   };
 
   return (
-    <View
-      style={[
-        commonViewStyles.flex,
-        drawerStatus !== 'closed' && styles.background,
-      ]}>
+    <View style={[commonViewStyles.flex, styles.background]}>
       <Animated.View style={[styles.container, homePageStyle]}>
         <SafeAreaView style={commonViewStyles.flex}>
           {/* DRAWER HEADER SIMULATOR */}
